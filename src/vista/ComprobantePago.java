@@ -32,8 +32,18 @@ public class ComprobantePago extends javax.swing.JPanel {
         jpanelEsquinasRedondas4 = new Estilos_panel.jpanelEsquinasRedondas();
         jpanelEsquinasRedondas3 = new Estilos_panel.jpanelEsquinasRedondas();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jpanelEsquinasRedondas8 = new Estilos_panel.jpanelEsquinasRedondas();
         jLabel2 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        Codigo_comprovante_de_pago = new javax.swing.JTextField();
+        Nombre_de_la_cuenta = new javax.swing.JTextField();
+        Parcial = new javax.swing.JTextField();
+        jpanelEsquinasRedondas9 = new Estilos_panel.jpanelEsquinasRedondas();
+        jLabel16 = new javax.swing.JLabel();
+        Debe_haber = new javax.swing.JTextField();
+        Añadir = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jpanelEsquinasRedondas6 = new Estilos_panel.jpanelEsquinasRedondas();
         jpanelEsquinasRedondas5 = new Estilos_panel.jpanelEsquinasRedondas();
         jLabel3 = new javax.swing.JLabel();
@@ -62,6 +72,8 @@ public class ComprobantePago extends javax.swing.JPanel {
         jpanelEsquinasRedondas1.setBackground(new java.awt.Color(255, 255, 255));
         jpanelEsquinasRedondas1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jpanelEsquinasRedondas2.setBackground(new java.awt.Color(204, 204, 204));
+
         jpanelEsquinasRedondas4.setBackground(new java.awt.Color(204, 204, 255));
 
         jpanelEsquinasRedondas3.setBackground(new java.awt.Color(189, 189, 250));
@@ -85,28 +97,75 @@ public class ComprobantePago extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
-        jPanel1.setPreferredSize(new java.awt.Dimension(640, 90));
+        jpanelEsquinasRedondas8.setBackground(new java.awt.Color(102, 102, 255));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Concepto:");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Codigo");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(540, 540, 540))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        jLabel14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Nombre de la cuenta");
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("Parcial");
+
+        javax.swing.GroupLayout jpanelEsquinasRedondas8Layout = new javax.swing.GroupLayout(jpanelEsquinasRedondas8);
+        jpanelEsquinasRedondas8.setLayout(jpanelEsquinasRedondas8Layout);
+        jpanelEsquinasRedondas8Layout.setHorizontalGroup(
+            jpanelEsquinasRedondas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanelEsquinasRedondas8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        jpanelEsquinasRedondas8Layout.setVerticalGroup(
+            jpanelEsquinasRedondas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanelEsquinasRedondas8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpanelEsquinasRedondas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        Codigo_comprovante_de_pago.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+
+        Nombre_de_la_cuenta.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+
+        Parcial.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+
+        jpanelEsquinasRedondas9.setBackground(new java.awt.Color(102, 102, 255));
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Saldo");
+
+        javax.swing.GroupLayout jpanelEsquinasRedondas9Layout = new javax.swing.GroupLayout(jpanelEsquinasRedondas9);
+        jpanelEsquinasRedondas9.setLayout(jpanelEsquinasRedondas9Layout);
+        jpanelEsquinasRedondas9Layout.setHorizontalGroup(
+            jpanelEsquinasRedondas9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanelEsquinasRedondas9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jpanelEsquinasRedondas9Layout.setVerticalGroup(
+            jpanelEsquinasRedondas9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelEsquinasRedondas9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jpanelEsquinasRedondas4Layout = new javax.swing.GroupLayout(jpanelEsquinasRedondas4);
@@ -114,38 +173,82 @@ public class ComprobantePago extends javax.swing.JPanel {
         jpanelEsquinasRedondas4Layout.setHorizontalGroup(
             jpanelEsquinasRedondas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jpanelEsquinasRedondas3, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
+            .addComponent(jpanelEsquinasRedondas8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jpanelEsquinasRedondas4Layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(Codigo_comprovante_de_pago, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(Nombre_de_la_cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Parcial, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addComponent(jpanelEsquinasRedondas9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jpanelEsquinasRedondas4Layout.setVerticalGroup(
             jpanelEsquinasRedondas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanelEsquinasRedondas4Layout.createSequentialGroup()
                 .addComponent(jpanelEsquinasRedondas3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jpanelEsquinasRedondas8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jpanelEsquinasRedondas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Nombre_de_la_cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Parcial, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Codigo_comprovante_de_pago, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jpanelEsquinasRedondas9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
+
+        Debe_haber.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+
+        Añadir.setBackground(new java.awt.Color(204, 204, 255));
+        Añadir.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Añadir.setText("Añadir");
+        Añadir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AñadirActionPerformed(evt);
+            }
+        });
+
+        jButton2.setBackground(new java.awt.Color(204, 204, 255));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setText("Calcular");
 
         javax.swing.GroupLayout jpanelEsquinasRedondas2Layout = new javax.swing.GroupLayout(jpanelEsquinasRedondas2);
         jpanelEsquinasRedondas2.setLayout(jpanelEsquinasRedondas2Layout);
         jpanelEsquinasRedondas2Layout.setHorizontalGroup(
             jpanelEsquinasRedondas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jpanelEsquinasRedondas4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jpanelEsquinasRedondas2Layout.createSequentialGroup()
-                .addComponent(jpanelEsquinasRedondas4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(140, 140, 140)
+                .addComponent(Añadir, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelEsquinasRedondas2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Debe_haber, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jpanelEsquinasRedondas2Layout.setVerticalGroup(
             jpanelEsquinasRedondas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanelEsquinasRedondas2Layout.createSequentialGroup()
                 .addComponent(jpanelEsquinasRedondas4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Debe_haber, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jpanelEsquinasRedondas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Añadir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
-        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 640, 270));
+        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 640, 330));
 
-        jpanelEsquinasRedondas6.setBackground(new java.awt.Color(240, 240, 240));
+        jpanelEsquinasRedondas6.setBackground(new java.awt.Color(204, 204, 204));
 
-        jpanelEsquinasRedondas5.setBackground(new java.awt.Color(189, 189, 250));
+        jpanelEsquinasRedondas5.setBackground(new java.awt.Color(102, 102, 255));
         jpanelEsquinasRedondas5.setPreferredSize(new java.awt.Dimension(1018, 40));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -164,10 +267,10 @@ public class ComprobantePago extends javax.swing.JPanel {
         );
         jpanelEsquinasRedondas5Layout.setVerticalGroup(
             jpanelEsquinasRedondas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
-        jPanel2.setBackground(new java.awt.Color(217, 217, 246));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 255));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
@@ -217,7 +320,7 @@ public class ComprobantePago extends javax.swing.JPanel {
         NoCedulaComprobantePago.setForeground(new java.awt.Color(204, 204, 204));
         NoCedulaComprobantePago.setBorder(null);
 
-        jPanel3.setBackground(new java.awt.Color(217, 217, 246));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 255));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
@@ -263,19 +366,9 @@ public class ComprobantePago extends javax.swing.JPanel {
 
         ElaboradoporComprobantePago.setForeground(new java.awt.Color(204, 204, 204));
         ElaboradoporComprobantePago.setBorder(null);
-        ElaboradoporComprobantePago.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ElaboradoporComprobantePagoActionPerformed(evt);
-            }
-        });
 
         AutorizadoComprobantePago.setForeground(new java.awt.Color(204, 204, 204));
         AutorizadoComprobantePago.setBorder(null);
-        AutorizadoComprobantePago.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AutorizadoComprobantePagoActionPerformed(evt);
-            }
-        });
 
         RevisadoComprobantePago.setForeground(new java.awt.Color(204, 204, 204));
         RevisadoComprobantePago.setBorder(null);
@@ -285,45 +378,45 @@ public class ComprobantePago extends javax.swing.JPanel {
         jpanelEsquinasRedondas6Layout.setHorizontalGroup(
             jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jpanelEsquinasRedondas5, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jpanelEsquinasRedondas6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpanelEsquinasRedondas6Layout.createSequentialGroup()
-                        .addComponent(RecibidoPorComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
-                        .addComponent(NoCedulaComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jpanelEsquinasRedondas6Layout.createSequentialGroup()
                         .addComponent(ElaboradoporComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
+                        .addGap(27, 27, 27)
                         .addComponent(RevisadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                        .addComponent(AutorizadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addComponent(AutorizadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelEsquinasRedondas6Layout.createSequentialGroup()
+                        .addComponent(RecibidoPorComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(NoCedulaComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(221, 221, 221))))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jpanelEsquinasRedondas6Layout.setVerticalGroup(
             jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanelEsquinasRedondas6Layout.createSequentialGroup()
-                .addComponent(jpanelEsquinasRedondas5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpanelEsquinasRedondas5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RecibidoPorComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NoCedulaComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(NoCedulaComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RecibidoPorComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AutorizadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RevisadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ElaboradoporComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addGroup(jpanelEsquinasRedondas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RevisadoComprobantePago, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ElaboradoporComprobantePago, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AutorizadoComprobantePago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
-        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 640, 230));
+        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 640, 230));
 
         tablaComprobantePago.setBackground(new java.awt.Color(240, 240, 240));
         tablaComprobantePago.setModel(new javax.swing.table.DefaultTableModel(
@@ -339,7 +432,7 @@ public class ComprobantePago extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tablaComprobantePago);
 
-        jpanelEsquinasRedondas1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 190, 270));
+        jpanelEsquinasRedondas1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 350, 320));
 
         guardar.setBackground(new java.awt.Color(204, 204, 255));
         guardar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -354,7 +447,7 @@ public class ComprobantePago extends javax.swing.JPanel {
                 guardarActionPerformed(evt);
             }
         });
-        jpanelEsquinasRedondas1.add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 200, 90, 30));
+        jpanelEsquinasRedondas1.add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 200, 90, 30));
 
         jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Managua, Nicaragua");
@@ -398,11 +491,11 @@ public class ComprobantePago extends javax.swing.JPanel {
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(jLabel13))
         );
 
-        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, 190, 180));
+        jpanelEsquinasRedondas1.add(jpanelEsquinasRedondas7, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 190, 180));
 
         jScrollPane1.setViewportView(jpanelEsquinasRedondas1);
 
@@ -410,41 +503,44 @@ public class ComprobantePago extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 867, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1016, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ElaboradoporComprobantePagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElaboradoporComprobantePagoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ElaboradoporComprobantePagoActionPerformed
-
-    private void AutorizadoComprobantePagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutorizadoComprobantePagoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AutorizadoComprobantePagoActionPerformed
 
     private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarActionPerformed
 
+    private void AñadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AñadirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AñadirActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextField AutorizadoComprobantePago;
+    private javax.swing.JButton Añadir;
+    public static javax.swing.JTextField Codigo_comprovante_de_pago;
+    public static javax.swing.JTextField Debe_haber;
     public javax.swing.JTextField ElaboradoporComprobantePago;
     public javax.swing.JTextField NoCedulaComprobantePago;
+    public static javax.swing.JTextField Nombre_de_la_cuenta;
+    public static javax.swing.JTextField Parcial;
     public javax.swing.JTextField RecibidoPorComprobantePago;
     public javax.swing.JTextField RevisadoComprobantePago;
     public javax.swing.JButton guardar;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -453,7 +549,6 @@ public class ComprobantePago extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
@@ -465,6 +560,8 @@ public class ComprobantePago extends javax.swing.JPanel {
     private Estilos_panel.jpanelEsquinasRedondas jpanelEsquinasRedondas5;
     private Estilos_panel.jpanelEsquinasRedondas jpanelEsquinasRedondas6;
     private Estilos_panel.jpanelEsquinasRedondas jpanelEsquinasRedondas7;
+    private Estilos_panel.jpanelEsquinasRedondas jpanelEsquinasRedondas8;
+    private Estilos_panel.jpanelEsquinasRedondas jpanelEsquinasRedondas9;
     private javax.swing.JTable tablaComprobantePago;
     // End of variables declaration//GEN-END:variables
 }
